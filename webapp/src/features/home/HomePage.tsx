@@ -1,7 +1,7 @@
 import "react";
 import "twin.macro";
-import { Navbar } from "../../layout/navbar/Navbar";
-import { PageContainer } from "../../layout/page-container/PageContainer";
+import { Navbar } from "../../components/Navbar";
+import { PageContainer } from "../../components/PageContainer";
 import { Home } from "./Home";
 
 export const HomePage = () => {
