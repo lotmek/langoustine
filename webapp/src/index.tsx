@@ -4,7 +4,7 @@ import { configureStore } from "@reduxjs/toolkit";
 
 import { AppComponent } from "./App";
 import ErrorBoundary from "./error/error-boundary/error-boundary";
-import rootReducer from "./store";
+import rootReducer from "./reducers";
 
 import "./style.css";
 
