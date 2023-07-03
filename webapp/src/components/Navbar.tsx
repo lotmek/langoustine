@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "twin.macro";
+import LangoustineLogo from "../assets/svg/langoustine-logo.svg";
 
 export const Navbar = () => {
   return (
@@ -25,16 +26,7 @@ export const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img
-                className="block h-8 w-auto lg:hidden"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
-              />
-              <img
-                className="hidden h-8 w-auto lg:block"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
-              />
+              <LangoustineLogo tw="block h-9 w-auto fill-gray-300" />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
