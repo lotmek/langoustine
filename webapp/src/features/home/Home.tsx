@@ -12,7 +12,7 @@ export const Home = () => {
       <Link tw="w-full" to="/review">
         <Button tw="w-full">Review cards</Button>
       </Link>
-      <Link tw="w-full" to="/">
+      <Link tw="w-full" to="/create">
         <Button tw="w-full">Create cards</Button>
       </Link>
     </div>

@@ -3,7 +3,7 @@ import "twin.macro";
 import { FlippingCard } from "./FlippingCard";
 import { AnswerTextArea } from "./AnswerTextArea";
 
-export const Review = () => {
+export const ReviewCard = () => {
   const [isAnswerSubmitted, setAnswerSubmitted] = useState(false);
   return (
     <div tw="w-full md:max-w-3xl h-full flex flex-col items-center p-8 m-auto overflow-hidden z-10">
