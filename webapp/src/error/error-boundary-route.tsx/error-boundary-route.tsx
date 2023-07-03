@@ -9,7 +9,8 @@ export const ErrorBoundaryRoute = ({ component: Component, ...rest }: RouteProps
     </ErrorBoundary>
   );
 
-  if (!Component) throw new Error(`A component needs to be specified for path ${(rest as any).path}`);
+  if (!Component)
+    throw new Error(`A component needs to be specified for path ${(rest as any).path}`);
 
   return <Route {...rest} render={encloseInErrorBoundary} />;
 };

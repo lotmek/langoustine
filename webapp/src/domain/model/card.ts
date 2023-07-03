@@ -2,13 +2,13 @@
  * Pre-answered card.
  */
 export interface SideCard {
-  id: string; // ID of the example in the table
+  id?: string; // ID of the example in the table
   phrase: string;
+  phraseDefinition?: string;
   phraseExample: string;
   phraseLanguage: string;
   translationLanguage: string;
   imageUrl?: string;
-  definition?: string;
 }
 
 /**
