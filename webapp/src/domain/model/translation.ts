@@ -1,7 +1,7 @@
 export interface TranslationExample {
-  sourceExample: string;
-  targetExample: string;
-  exampleUrl?: string;
+  phraseExample: string;
+  translationExample: string;
+  exampleSourceUrl?: string;
 }
 
 export interface TranslationResult {
@@ -10,10 +10,10 @@ export interface TranslationResult {
 }
 
 export interface Translation {
-  expression: string;
+  phrase: string;
   definition?: string;
   imageUrl?: string;
-  sourceLanguage: string;
-  targetLanguage: string;
+  phraseLanguage: string;
+  translationLanguage: string;
   results: TranslationResult[];
 }
