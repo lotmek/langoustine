@@ -24,7 +24,6 @@ const SubmitButtonStyle = tw`
   rounded-full cursor-pointer
   hover:bg-gray-600
 `;
-
 interface AnswerTextAreaProps {
   setAnswerSubmitted: (value: boolean) => void;
 }
