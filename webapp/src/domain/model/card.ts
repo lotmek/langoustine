@@ -1,13 +1,15 @@
+import { Language } from "domain/enum/language";
+
 /**
  * Pre-answered card.
  */
 export interface SideCard {
   id?: string; // ID of the example in the table
-  phrase: string;
-  phraseDefinition?: string;
-  phraseExample: string;
-  phraseLanguage: string;
-  translationLanguage: string;
+  input: string;
+  inputDefinition?: string;
+  inputExample: string;
+  inputLanguage: string;
+  outputLanguage: Language;
   imageUrl?: string;
 }
 
@@ -15,6 +17,6 @@ export interface SideCard {
  * Card with the right answer.
  */
 export interface FullCard extends SideCard {
-  translation: string;
-  translationExample: string;
+  output: string;
+  outputExample: string;
 }
