@@ -10,7 +10,7 @@ const StyledLabel = styled.label`
   ${tw`font-medium`}
 `;
 
-export const CreateCardForm: React.FC = () => {
+export const CreateCardForm = () => {
   const initialValues: FullCard = {
     input: "",
     inputLanguage: Language.FR,
