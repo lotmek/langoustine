@@ -1,5 +1,5 @@
 import { exampleController } from "./controller/example/example-controller";
-import { HttpMethods, IHandlerRoute } from "./models/route";
+import { HttpMethods, IHandlerRoute } from "./domain/model/route";
 
 export const getAPIRoutes = (): IHandlerRoute[] => {
   return [{ method: HttpMethods.GET, path: "/", handler: exampleController.getHelloWorld }];
