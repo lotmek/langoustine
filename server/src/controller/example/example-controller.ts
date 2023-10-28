@@ -10,4 +10,4 @@ export class ExampleController implements IExampleController {
 }
 
 // Singleton
-export const exampleController: ExampleController = new ExampleController();
+export const exampleController = new ExampleController();
