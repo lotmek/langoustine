@@ -4,12 +4,12 @@ import { Request, Response, NextFunction } from "express";
  * The http methods
  */
 export enum HttpMethods {
-  ALL, // All methods
-  GET,
-  POST,
-  PUT,
-  DELETE,
-  OPTIONS,
+  ALL = "all", // All methods
+  GET = "get",
+  POST = "post",
+  PUT = "put",
+  DELETE = "delete",
+  OPTIONS = "options",
 }
 
 /**
