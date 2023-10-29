@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import _ from "lodash";
+import { Audited } from "../domain/model/audits";
+import { Document } from "mongoose";
 
 export abstract class BaseRepository<T extends {}> {
   /**
@@ -15,7 +17,6 @@ export abstract class BaseRepository<T extends {}> {
   protected buildAuditedValue(obj: T): Audited<T> {
     return {
       ...obj,
-      version: this.generateNewVersion(),
       audits: {
         createdAt: new Date(),
         lastModifiedAt: new Date(),
@@ -26,7 +27,7 @@ export abstract class BaseRepository<T extends {}> {
   /**
    * Build object without audits.
    */
-  protected buildAuditLessValue(obj: T): T {
-    return _.omit(obj, ["audits", "version"]) as T;
+  protected buildAuditLessValue(obj: Document<unknown, {}, Audited<T>>): T {
+    return _.omit(obj.toObject(), ["audits", "version", "_id", "__v"]) as T;
   }
 }
