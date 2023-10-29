@@ -1,4 +1,4 @@
-import express, { Express } from "express";
+import express, { Express, json } from "express";
 import { IHandlerRoute } from "../domain/model/route";
 import { initMongoose } from "./mongoose";
 
@@ -9,6 +9,7 @@ import { initMongoose } from "./mongoose";
  */
 export async function createApp(apiRoutes: IHandlerRoute[]): Promise<Express> {
   const app = express();
+  app.use(json());
   addRoutes(app, apiRoutes);
 
   initMongoose();
