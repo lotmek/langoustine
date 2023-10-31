@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 import { FullCard } from "../model/card";
 import { Language } from "../enum/language";
+import { auditsSchema } from "./common-schema";
+import { Audited } from "../model/audits";
 
-const cardSchema: mongoose.Schema<FullCard> = new mongoose.Schema({
+const cardSchema = new mongoose.Schema<Audited<FullCard>>({
   id: {
     type: String,
   },
@@ -38,6 +40,7 @@ const cardSchema: mongoose.Schema<FullCard> = new mongoose.Schema({
   imageUrl: {
     type: String,
   },
+  audits: auditsSchema,
 });
 
 export const cardModel = mongoose.model("Card", cardSchema);

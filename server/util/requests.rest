@@ -1,0 +1,14 @@
+@baseApiUrl = http://localhost:8000
+
+### CREATE CARD
+POST {{baseApiUrl}}/v1/card HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "bonjour",
+  "inputLanguage": "fr",
+  "inputExample": "Un adulte portant un enfant et marchant disant le bonjour.",
+  "output": "hello",
+  "outputLanguage": "en",
+  "outputExample": "An adult carrying a child and walking saying hello."
+}

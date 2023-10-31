@@ -1,10 +1,29 @@
 version: "3.8"
 services:
+  langoustine-server:
+    build: .
+    image: langoustine-server
+    environment:
+      - PORT=8000
+      - DB_URL=mongodb://mongodb:27017/test
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/src
+    networks:
+      - langoustine-network
   mongodb:
     image: mongo:6-jammy
     ports:
       - "27017:27017"
     volumes:
       - dbdata6:/data/db
+    networks:
+      - langoustine-network
 volumes:
   dbdata6:
+networks:
+  langoustine-network:
+    driver: bridge
