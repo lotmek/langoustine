@@ -5,6 +5,6 @@ import { exampleController } from "./controller/example/example-controller";
 export const getAPIRoutes = (): IHandlerRoute[] => {
   return [
     { method: HttpMethods.GET, path: "/", handler: exampleController.getHelloWorld },
-    { method: HttpMethods.POST, path: "/v1/card", handler: cardController.createCard },
+    { method: HttpMethods.POST, path: "/v1/cards", handler: cardController.createCard },
   ];
 };
