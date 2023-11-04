@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, HTMLAttributes } from "react";
 import "twin.macro";
 
-interface PageContainerProps {
+interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 

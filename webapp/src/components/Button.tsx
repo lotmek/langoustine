@@ -10,5 +10,6 @@ export const Button = styled.button`
   focus:outline-none
   focus:ring-4 focus:ring-primary
   rounded-lg
+  cursor-pointer
 `}
 `;

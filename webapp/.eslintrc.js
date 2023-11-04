@@ -22,6 +22,7 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     // 'plugin:eslint-comments/recommended',
     "prettier",
+    "plugin:storybook/recommended"
   ],
   rules: {
     "no-unused-vars": "off",
