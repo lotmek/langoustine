@@ -23,11 +23,11 @@ export const CreateCardForm = () => {
   };
 
   const onSubmit = (values: FullCard) => {
-    console.log(values);
+    console.log("Submit !", values);
   };
 
   const validate = (values: FullCard) => {
-    console.log(values);
+    console.log("Validate !", values);
     const errors = {};
     return errors;
   };
@@ -38,7 +38,7 @@ export const CreateCardForm = () => {
         <div tw="w-full gap-y-2 flex flex-col mb-4">
           <StyledLabel htmlFor="input">Phrase</StyledLabel>
           <div tw="w-full flex flex-col sm:flex-row gap-y-4 sm:gap-x-4">
-            <Field tw="flex-[3] p-2" type="text" id="input" name="input" />
+            <Field tw="flex-[3] p-2" type="text" id="input" name="input" autocomplete="off" />
             <Field as="select" tw="flex-1" name="inputLanguage" id="inputLanguage">
               <option value="french">French</option>
               <option value="english">English</option>
@@ -50,7 +50,7 @@ export const CreateCardForm = () => {
         <div tw="w-full gap-y-2 flex flex-col mb-4">
           <StyledLabel htmlFor="output">Translation</StyledLabel>
           <div tw="w-full flex flex-col sm:flex-row gap-y-4 sm:gap-x-4">
-            <Field tw="flex-[3] p-2" type="text" id="output" name="output" />
+            <Field tw="flex-[3] p-2" type="text" id="output" name="output" autocomplete="off" />
             <Field as="select" tw="flex-1" name="outputLanguage" id="outputLanguage">
               <option value="french">French</option>
               <option value="english">English</option>
@@ -70,6 +70,7 @@ export const CreateCardForm = () => {
             rows={2}
             placeholder="Add the definition of the phrase"
             tw="p-2"
+            autocomplete="off"
           />
         </div>
 
@@ -82,6 +83,7 @@ export const CreateCardForm = () => {
             rows={2}
             placeholder="Use the input in a sentence"
             tw="p-2"
+            autocomplete="off"
           />
         </div>
 
@@ -94,6 +96,7 @@ export const CreateCardForm = () => {
             rows={2}
             placeholder="Use the input in a sentence"
             tw="p-2"
+            autocomplete="off"
           />
         </div>
 
@@ -101,7 +104,7 @@ export const CreateCardForm = () => {
           <StyledLabel htmlFor="imageUrl">
             Image URL <span tw="italic">- Optional</span>
           </StyledLabel>
-          <Field tw="flex-[3] p-2" type="text" id="imageUrl" name="imageUrl" />
+          <Field tw="flex-[3] p-2" type="text" id="imageUrl" name="imageUrl" autocomplete="off" />
         </div>
 
         <div tw="w-full m-auto flex justify-center">
