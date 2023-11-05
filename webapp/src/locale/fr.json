@@ -1,0 +1,21 @@
+{
+  "language": {
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "createCard": {
+    "title": "Révisons quelques mots/phrases",
+    "manualForm": {
+      "input": "Phrase",
+      "inputExample": "Exemple dans la langue source",
+      "output": "Traduction",
+      "outputExample": "Exemple dans la langue cible",
+      "examplePlaceholder": "Ajoutez un exemple",
+      "definition": "Définition",
+      "definitionPlaceholder": "Ajoutez la définition de la phrase",
+      "optional": "Optionnel",
+      "imageUrl": "URL de l'image",
+      "create": "Créer la carte"
+    }
+  }
+}

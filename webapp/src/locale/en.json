@@ -1,0 +1,21 @@
+{
+  "language": {
+    "english": "English",
+    "french": "French"
+  },
+  "createCard": {
+    "title": "Let's review some words/sentences",
+    "manualForm": {
+      "input": "Phrase",
+      "inputExample": "Example in the source language",
+      "output": "Translation",
+      "outputExample": "Example in the target language",
+      "examplePlaceholder": "Add an example",
+      "definition": "Definition",
+      "definitionPlaceholder": "Add the definition of the phrase",
+      "optional": "Optional",
+      "imageUrl": "Image URL",
+      "create": "Create the card"
+    }
+  }
+}
