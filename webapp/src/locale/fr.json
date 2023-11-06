@@ -15,7 +15,8 @@
       "definitionPlaceholder": "Ajoutez la définition de la phrase",
       "optional": "Optionnel",
       "imageUrl": "URL de l'image",
-      "create": "Créer la carte"
+      "create": "Créer la carte",
+      "requiredField": "Champ requis"
     }
   }
 }

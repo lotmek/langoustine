@@ -15,7 +15,8 @@
       "definitionPlaceholder": "Add the definition of the phrase",
       "optional": "Optional",
       "imageUrl": "Image URL",
-      "create": "Create the card"
+      "create": "Create the card",
+      "requiredField": "Required field"
     }
   }
 }
