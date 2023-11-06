@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       "process.env.name": JSON.stringify("Langoustine Dev"),
+      "process.env.SERVER_BASE_URL": "http://localhost:8000",
     }),
   ],
 };
