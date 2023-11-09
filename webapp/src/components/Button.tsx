@@ -11,5 +11,7 @@ export const Button = styled.button`
   focus:ring-4 focus:ring-primary
   rounded-lg
   cursor-pointer
+  disabled:hover:cursor-default
+  disabled:bg-gray-500
 `}
 `;
