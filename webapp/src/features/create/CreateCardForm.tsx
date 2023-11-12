@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Button } from "../../components/Button";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -6,6 +6,7 @@ import { Formik, Form, Field, ErrorMessage, FormikErrors } from "formik";
 import { FullCard } from "../../domain/model/card";
 import { Language } from "domain/enum/language";
 import { useTranslation } from "react-i18next";
+import { Loader } from "../../components/Loader";
 
 const StyledLabel = styled.label`
   ${tw`font-medium`}
@@ -13,6 +14,8 @@ const StyledLabel = styled.label`
 
 export const CreateCardForm: React.FC = () => {
   const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+
   const initialValues: FullCard = {
     input: "",
     inputLanguage: Language.FR,
@@ -42,7 +45,12 @@ export const CreateCardForm: React.FC = () => {
   return (
     <Formik initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
       {({ isValid }) => (
-        <Form tw="flex flex-col h-full bg-amber-400 p-5 rounded-lg w-full max-w-3xl">
+        <Form tw="flex flex-col h-full bg-amber-400 p-5 rounded-lg w-full max-w-3xl relative">
+          {isLoading && (
+            <div tw="absolute inset-0 flex justify-center items-center bg-gray-500 opacity-30">
+              <Loader />
+            </div>
+          )}
           <div tw="w-full gap-y-2 flex flex-col mb-4">
             <StyledLabel htmlFor="input">{t("createCard.manualForm.input")}</StyledLabel>
             <div tw="w-full flex flex-col sm:flex-row gap-y-4 sm:gap-x-4">
