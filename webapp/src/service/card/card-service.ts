@@ -4,7 +4,7 @@ import axios from "axios";
 
 class CardService implements ICardService {
   createCard(card: FullCard): Promise<FullCard> {
-    return axios.post("/cards", card, {
+    return axios.post("/v1/cards", card, {
       headers: {
         "Content-Type": "application/json",
       },

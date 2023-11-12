@@ -7,6 +7,7 @@ import { FullCard } from "../../domain/model/card";
 import { Language } from "domain/enum/language";
 import { useTranslation } from "react-i18next";
 import { Loader } from "../../components/Loader";
+import { cardService } from "../../service/card/card-service";
 
 const StyledLabel = styled.label`
   ${tw`font-medium`}
@@ -14,21 +15,31 @@ const StyledLabel = styled.label`
 
 export const CreateCardForm: React.FC = () => {
   const { t } = useTranslation();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const initialValues: FullCard = {
     input: "",
     inputLanguage: Language.FR,
     outputLanguage: Language.EN,
-    inputDefinition: "",
     inputExample: "",
     output: "",
     outputExample: "",
-    imageUrl: "",
   };
 
   const onSubmit = (values: FullCard) => {
-    console.log("Submit !", values);
+    setIsLoading(true);
+    cardService
+      .createCard(values)
+      .then(() => {
+        alert("The card was created successfully");
+      })
+      .catch((err) => {
+        alert("An error occured while creating the card");
+        console.log(err);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   const validate = (values: FullCard): FormikErrors<FullCard> => {
