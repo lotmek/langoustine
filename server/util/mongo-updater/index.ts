@@ -1,9 +1,10 @@
 import * as mongoDB from "mongodb";
 import dotenv from "dotenv";
 import path from "path";
-import { getSortedVersionFiles } from "./file";
+import { compareVersions, getFileVersion, getSortedVersionFiles } from "./file";
 
 dotenv.config();
+
 /**
  * Function to update the test database
  */
@@ -33,17 +34,34 @@ async function updateTestDb() {
     config = await testConfigCollection.insertOne({ version: "0.0.0" });
   }
 
+  let currentVersion: string = config.version;
+
   // Get a sorted list of version files from the versions directory
   const versionPath = path.resolve(__dirname, "./versions");
   const versionFiles = getSortedVersionFiles(versionPath);
 
   // Import and execute functions in order
   for (const file of versionFiles) {
+    if (compareVersions(currentVersion, file) >= 0) {
+      console.log(`Skipping updater ${file}`);
+      continue;
+    }
+
     try {
       const module = await import(path.resolve(versionPath, file));
       if (module.default && typeof module.default === "function") {
-        module.default();
-        console.log(`Function in ${file} executed successfully.`);
+        await module.default(db);
+        console.log(`Updater ${file} executed successfully.`);
+
+        currentVersion = getFileVersion(file) ?? currentVersion;
+        await testConfigCollection.updateOne(
+          { _id: config._id },
+          {
+            $set: {
+              version: currentVersion,
+            },
+          }
+        );
       } else {
         console.error(`No valid default export in ${file}.`);
       }

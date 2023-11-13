@@ -11,16 +11,21 @@ export const getSortedVersionFiles = (directoryPath: string) => {
   const versionedFiles = files.filter((file) => /^\d+\.\d+\.\d+\.ts$/.test(file));
 
   // Sort files in numerical order
-  const sortedFiles = versionedFiles.sort((a, b) => {
-    const [aMajor, aMinor, aPatch] = a.split(".").map(Number);
-    const [bMajor, bMinor, bPatch] = b.split(".").map(Number);
-
-    if (aMajor !== bMajor) return aMajor - bMajor;
-    if (aMinor !== bMinor) return aMinor - bMinor;
-    return aPatch - bPatch;
-  });
+  const sortedFiles = versionedFiles.sort(compareVersions);
 
   return sortedFiles;
+};
+
+/**
+ * Function to compare versions. Can be used in an array's 'sort' method.
+ */
+export const compareVersions = (a: string, b: string) => {
+  const [aMajor, aMinor, aPatch] = a.split(".").map(Number);
+  const [bMajor, bMinor, bPatch] = b.split(".").map(Number);
+
+  if (aMajor !== bMajor) return aMajor - bMajor;
+  if (aMinor !== bMinor) return aMinor - bMinor;
+  return aPatch - bPatch;
 };
 
 /**
