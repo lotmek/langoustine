@@ -1,0 +1,810 @@
+[
+  {
+    "input": "maison",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a une belle maison",
+    "output": "house",
+    "outputExample": "He has a beautiful house"
+  },
+  {
+    "input": "arbre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Le parc est rempli d'arbres",
+    "output": "tree",
+    "outputExample": "The park is filled with trees"
+  },
+  {
+    "input": "fleur",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime les fleurs colorées",
+    "output": "flower",
+    "outputExample": "She likes colorful flowers"
+  },
+  {
+    "input": "livre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il lit un bon livre chaque soir",
+    "output": "book",
+    "outputExample": "He reads a good book every evening"
+  },
+  {
+    "input": "ordinateur",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle travaille sur son ordinateur portable",
+    "output": "computer",
+    "outputExample": "She works on her laptop"
+  },
+  {
+    "input": "ciel",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Le ciel est bleu et dégagé aujourd'hui",
+    "output": "sky",
+    "outputExample": "The sky is blue and clear today"
+  },
+  {
+    "input": "soleil",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Le soleil brille fort en été",
+    "output": "sun",
+    "outputExample": "The sun shines brightly in the summer"
+  },
+  {
+    "input": "lune",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "La lune est visible dans le ciel nocturne",
+    "output": "moon",
+    "outputExample": "The moon is visible in the night sky"
+  },
+  {
+    "input": "étoile",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il y a beaucoup d'étoiles dans le ciel étoilé",
+    "output": "star",
+    "outputExample": "There are many stars in the starry sky"
+  },
+  {
+    "input": "mer",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils aiment marcher le long de la mer",
+    "output": "sea",
+    "outputExample": "They like to walk along the sea"
+  },
+  {
+    "input": "montagne",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous allons faire de la randonnée en montagne ce week-end",
+    "output": "mountain",
+    "outputExample": "We are going hiking in the mountains this weekend"
+  },
+  {
+    "input": "rivière",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "La rivière serpente à travers la vallée",
+    "output": "river",
+    "outputExample": "The river winds through the valley"
+  },
+  {
+    "input": "plage",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils adorent passer du temps sur la plage",
+    "output": "beach",
+    "outputExample": "They love spending time on the beach"
+  },
+  {
+    "input": "ville",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "La ville est animée de jour comme de nuit",
+    "output": "city",
+    "outputExample": "The city is bustling day and night"
+  },
+  {
+    "input": "route",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils prennent la route pour un road trip",
+    "output": "road",
+    "outputExample": "They hit the road for a road trip"
+  },
+  {
+    "input": "voiture",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il conduit une voiture de sport",
+    "output": "car",
+    "outputExample": "He drives a sports car"
+  },
+  {
+    "input": "train",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle prend le train pour aller travailler",
+    "output": "train",
+    "outputExample": "She takes the train to go to work"
+  },
+  {
+    "input": "avion",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous voyageons en avion pour nos vacances",
+    "output": "plane",
+    "outputExample": "We travel by plane for our holidays"
+  },
+  {
+    "input": "vélo",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il fait du vélo pour rester en forme",
+    "output": "bike",
+    "outputExample": "He bikes to stay fit"
+  },
+  {
+    "input": "pied",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle préfère se déplacer à pied",
+    "output": "foot",
+    "outputExample": "She prefers to get around on foot"
+  },
+  {
+    "input": "main",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il tient un bouquet de fleurs dans sa main",
+    "output": "hand",
+    "outputExample": "He holds a bouquet of flowers in his hand"
+  },
+  {
+    "input": "tête",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle a mal à la tête",
+    "output": "head",
+    "outputExample": "She has a headache"
+  },
+  {
+    "input": "œil",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a un œil vif et curieux",
+    "output": "eye",
+    "outputExample": "He has a sharp and curious eye"
+  },
+  {
+    "input": "oreille",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle écoute de la musique avec ses oreilles",
+    "output": "ear",
+    "outputExample": "She listens to music with her ears"
+  },
+  {
+    "input": "nez",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il sent le parfum des fleurs avec son nez",
+    "output": "nose",
+    "outputExample": "He smells the fragrance of flowers with his nose"
+  },
+  {
+    "input": "bouche",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle goûte la cuisine délicieuse avec sa bouche",
+    "output": "mouth",
+    "outputExample": "She tastes delicious food with her mouth"
+  },
+  {
+    "input": "doigt",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il écrit avec ses doigts agiles",
+    "output": "finger",
+    "outputExample": "He writes with his agile fingers"
+  },
+  {
+    "input": "pied",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle porte des chaussures élégantes à ses pieds",
+    "output": "foot",
+    "outputExample": "She wears stylish shoes on her feet"
+  },
+  {
+    "input": "genou",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a mal au genou après avoir couru",
+    "output": "knee",
+    "outputExample": "He has knee pain after running"
+  },
+  {
+    "input": "ventre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle a un papillon dans le ventre avant le spectacle",
+    "output": "stomach",
+    "outputExample": "She has butterflies in her stomach before the show"
+  },
+  {
+    "input": "dos",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a mal au dos après avoir soulevé des objets lourds",
+    "output": "back",
+    "outputExample": "He has back pain after lifting heavy objects"
+  },
+  {
+    "input": "bras",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle étend les bras pour attraper le ballon",
+    "output": "arm",
+    "outputExample": "She reaches out her arms to catch the ball"
+  },
+  {
+    "input": "épaule",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il met son bras autour de son épaule",
+    "output": "shoulder",
+    "outputExample": "He puts his arm around her shoulder"
+  },
+  {
+    "input": "cou",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle porte un collier autour de son cou",
+    "output": "neck",
+    "outputExample": "She wears a necklace around her neck"
+  },
+  {
+    "input": "tête",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a une idée brillante dans sa tête",
+    "output": "head",
+    "outputExample": "He has a brilliant idea in his head"
+  },
+  {
+    "input": "cheveu",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle a des cheveux longs et soyeux",
+    "output": "hair",
+    "outputExample": "She has long and silky hair"
+  },
+  {
+    "input": "visage",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a un visage joyeux et souriant",
+    "output": "face",
+    "outputExample": "He has a joyful and smiling face"
+  },
+  {
+    "input": "corps",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle prend soin de son corps en faisant de l'exercice",
+    "output": "body",
+    "outputExample": "She takes care of her body by exercising"
+  },
+  {
+    "input": "doigt de pied",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il se cogne le doigt de pied contre le meuble",
+    "output": "toe",
+    "outputExample": "He bumps his toe against the furniture"
+  },
+  {
+    "input": "ongle",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle peint ses ongles avec du vernis à ongles coloré",
+    "output": "nail",
+    "outputExample": "She paints her nails with colorful nail polish"
+  },
+  {
+    "input": "peau",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a une peau douce et lisse",
+    "output": "skin",
+    "outputExample": "He has soft and smooth skin"
+  },
+  {
+    "input": "sang",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle donne du sang lors de la collecte de sang",
+    "output": "blood",
+    "outputExample": "She donates blood during the blood drive"
+  },
+  {
+    "input": "os",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il a un squelette composé d'os solides",
+    "output": "bone",
+    "outputExample": "He has a skeleton made of sturdy bones"
+  },
+  {
+    "input": "fenêtre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle regarde par la fenêtre",
+    "output": "window",
+    "outputExample": "She is looking out the window"
+  },
+  {
+    "input": "chaise",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il s'assoit sur la chaise en bois",
+    "output": "chair",
+    "outputExample": "He sits on the wooden chair"
+  },
+  {
+    "input": "table",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "La famille se réunit autour de la table pour le dîner",
+    "output": "table",
+    "outputExample": "The family gathers around the table for dinner"
+  },
+  {
+    "input": "lampe",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle allume la lampe pour éclairer la pièce",
+    "output": "lamp",
+    "outputExample": "She turns on the lamp to light up the room"
+  },
+  {
+    "input": "télévision",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils regardent un film à la télévision",
+    "output": "television",
+    "outputExample": "They are watching a movie on television"
+  },
+  {
+    "input": "téléphone",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle parle au téléphone avec son ami",
+    "output": "phone",
+    "outputExample": "She talks on the phone with her friend"
+  },
+  {
+    "input": "journal",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il lit le journal tous les matins",
+    "output": "newspaper",
+    "outputExample": "He reads the newspaper every morning"
+  },
+  {
+    "input": "magasin",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle fait du shopping dans le magasin de vêtements",
+    "output": "store",
+    "outputExample": "She goes shopping in the clothing store"
+  },
+  {
+    "input": "école",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Les enfants vont à l'école tous les jours",
+    "output": "school",
+    "outputExample": "The children go to school every day"
+  },
+  {
+    "input": "crayon",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il dessine avec un crayon sur une feuille de papier",
+    "output": "pencil",
+    "outputExample": "He draws with a pencil on a sheet of paper"
+  },
+  {
+    "input": "stylo",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle écrit une lettre avec un stylo bleu",
+    "output": "pen",
+    "outputExample": "She writes a letter with a blue pen"
+  },
+  {
+    "input": "musique",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils écoutent de la musique classique",
+    "output": "music",
+    "outputExample": "They listen to classical music"
+  },
+  {
+    "input": "film",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous regardons un film passionnant ce soir",
+    "output": "movie",
+    "outputExample": "We are watching an exciting movie tonight"
+  },
+  {
+    "input": "photo",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il prend une photo du coucher de soleil",
+    "output": "photo",
+    "outputExample": "He takes a photo of the sunset"
+  },
+  {
+    "input": "vacances",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils planifient des vacances en famille",
+    "output": "vacation",
+    "outputExample": "They are planning a family vacation"
+  },
+  {
+    "input": "temps",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Le temps est ensoleillé aujourd'hui",
+    "output": "weather",
+    "outputExample": "The weather is sunny today"
+  },
+  {
+    "input": "manger",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Je voudrais manger au restaurant",
+    "output": "eat",
+    "outputExample": "I would like to eat at a restaurant"
+  },
+  {
+    "input": "boire",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il aime boire du café le matin",
+    "output": "drink",
+    "outputExample": "He likes to drink coffee in the morning"
+  },
+  {
+    "input": "dormir",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime dormir huit heures par nuit",
+    "output": "sleep",
+    "outputExample": "She likes to sleep eight hours per night"
+  },
+  {
+    "input": "lire",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il préfère lire des livres plutôt que de regarder la télévision",
+    "output": "read",
+    "outputExample": "He prefers to read books rather than watch television"
+  },
+  {
+    "input": "courir",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous aimons courir dans le parc le matin",
+    "output": "run",
+    "outputExample": "We like to run in the park in the morning"
+  },
+  {
+    "input": "écrire",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime écrire des poèmes",
+    "output": "write",
+    "outputExample": "She likes to write poems"
+  },
+  {
+    "input": "parler",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Ils aiment parler plusieurs langues",
+    "output": "speak",
+    "outputExample": "They like to speak multiple languages"
+  },
+  {
+    "input": "écouter",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle adore écouter de la musique classique",
+    "output": "listen",
+    "outputExample": "She loves to listen to classical music"
+  },
+  {
+    "input": "regarder",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous allons regarder un film ce soir",
+    "output": "watch",
+    "outputExample": "We are going to watch a movie tonight"
+  },
+  {
+    "input": "jouer",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il aime jouer du piano",
+    "output": "play",
+    "outputExample": "He likes to play the piano"
+  },
+  {
+    "input": "apprendre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle veut apprendre à programmer",
+    "output": "learn",
+    "outputExample": "She wants to learn how to program"
+  },
+  {
+    "input": "enseigner",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il va enseigner l'histoire à l'université",
+    "output": "teach",
+    "outputExample": "He is going to teach history at the university"
+  },
+  {
+    "input": "voyager",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous aimons voyager et découvrir de nouvelles cultures",
+    "output": "travel",
+    "outputExample": "We like to travel and discover new cultures"
+  },
+  {
+    "input": "acheter",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle veut acheter une nouvelle voiture",
+    "output": "buy",
+    "outputExample": "She wants to buy a new car"
+  },
+  {
+    "input": "vendre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il va vendre sa vieille collection de bandes dessinées",
+    "output": "sell",
+    "outputExample": "He is going to sell his old comic book collection"
+  },
+  {
+    "input": "travailler",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime travailler sur des projets créatifs",
+    "output": "work",
+    "outputExample": "She likes to work on creative projects"
+  },
+  {
+    "input": "étudier",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il doit étudier pour ses examens",
+    "output": "study",
+    "outputExample": "He has to study for his exams"
+  },
+  {
+    "input": "comprendre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle ne peut pas comprendre pourquoi cela s'est produit",
+    "output": "understand",
+    "outputExample": "She can't understand why this happened"
+  },
+  {
+    "input": "penser",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il aime penser à des idées innovantes",
+    "output": "think",
+    "outputExample": "He likes to think of innovative ideas"
+  },
+  {
+    "input": "aimer",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle adore aimer les animaux",
+    "output": "love",
+    "outputExample": "She loves to love animals"
+  },
+  {
+    "input": "détester",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il déteste détester les disputes",
+    "output": "hate",
+    "outputExample": "He hates to hate arguments"
+  },
+  {
+    "input": "chanter",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime chanter dans la chorale de l'église",
+    "output": "sing",
+    "outputExample": "She likes to sing in the church choir"
+  },
+  {
+    "input": "danser",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous allons danser lors de la fête ce soir",
+    "output": "dance",
+    "outputExample": "We are going to dance at the party tonight"
+  },
+  {
+    "input": "cuisiner",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il sait cuisiner de délicieux plats",
+    "output": "cook",
+    "outputExample": "He knows how to cook delicious dishes"
+  },
+  {
+    "input": "marcher",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime marcher dans le parc tous les jours",
+    "output": "walk",
+    "outputExample": "She likes to walk in the park every day"
+  },
+  {
+    "input": "dessiner",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il va dessiner un portrait ce soir",
+    "output": "draw",
+    "outputExample": "He is going to draw a portrait tonight"
+  },
+  {
+    "input": "peindre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle adore peindre des paysages",
+    "output": "paint",
+    "outputExample": "She loves to paint landscapes"
+  },
+  {
+    "input": "photographier",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous aimons photographier la nature",
+    "output": "photograph",
+    "outputExample": "We like to photograph nature"
+  },
+  {
+    "input": "voir",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il veut voir le monde",
+    "output": "see",
+    "outputExample": "He wants to see the world"
+  },
+  {
+    "input": "entendre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime entendre le bruit des vagues",
+    "output": "hear",
+    "outputExample": "She likes to hear the sound of the waves"
+  },
+  {
+    "input": "sentir",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il peut sentir le parfum des fleurs",
+    "output": "smell",
+    "outputExample": "He can smell the fragrance of the flowers"
+  },
+  {
+    "input": "goûter",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle veut goûter des plats exotiques",
+    "output": "taste",
+    "outputExample": "She wants to taste exotic dishes"
+  },
+  {
+    "input": "toucher",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Nous pouvons toucher la texture de ce tissu",
+    "output": "touch",
+    "outputExample": "We can touch the texture of this fabric"
+  },
+  {
+    "input": "porter",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il va porter un costume élégant à la soirée",
+    "output": "wear",
+    "outputExample": "He is going to wear a stylish suit to the party"
+  },
+  {
+    "input": "acheter",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle aime acheter des vêtements à la mode",
+    "output": "buy",
+    "outputExample": "She likes to buy fashionable clothes"
+  },
+  {
+    "input": "vendre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il va vendre sa collection de bijoux",
+    "output": "sell",
+    "outputExample": "He is going to sell his jewelry collection"
+  },
+  {
+    "input": "travailler",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle travaille dur pour atteindre ses objectifs",
+    "output": "work",
+    "outputExample": "She works hard to achieve her goals"
+  },
+  {
+    "input": "étudier",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il doit étudier pour son examen de mathématiques",
+    "output": "study",
+    "outputExample": "He has to study for his math exam"
+  },
+  {
+    "input": "comprendre",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle essaie de comprendre la signification de ce poème",
+    "output": "understand",
+    "outputExample": "She is trying to understand the meaning of this poem"
+  },
+  {
+    "input": "penser",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il aime penser à des solutions créatives",
+    "output": "think",
+    "outputExample": "He likes to think of creative solutions"
+  },
+  {
+    "input": "aimer",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Elle adore aimer la nature",
+    "output": "love",
+    "outputExample": "She loves to love nature"
+  },
+  {
+    "input": "détester",
+    "inputLanguage": "fr",
+    "outputLanguage": "en",
+    "inputExample": "Il déteste détester le bruit fort",
+    "output": "hate",
+    "outputExample": "He hates to hate loud noise"
+  }
+]

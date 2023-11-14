@@ -31,7 +31,9 @@ async function updateTestDb() {
     await testConfigCollection.findOne();
 
   if (!config) {
-    config = await testConfigCollection.insertOne({ version: "0.0.0" });
+    config = { version: "0.0.0" };
+    const { insertedId } = await testConfigCollection.insertOne(config);
+    config._id = insertedId;
   }
 
   let currentVersion: string = config.version;
@@ -71,4 +73,7 @@ async function updateTestDb() {
   }
 }
 
-updateTestDb();
+updateTestDb().then(() => {
+  console.log("\nMongo update is done!\n");
+  process.exit(0);
+});

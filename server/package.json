@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "nodemon src/index.ts",
-    "mongo-update": "nodemon util/mongo-updater/index.ts"
+    "mongo-update": "ts-node util/mongo-updater/index.ts"
   },
   "keywords": [],
   "author": "",
