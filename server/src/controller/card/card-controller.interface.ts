@@ -11,6 +11,14 @@ export interface ICardController {
   getFullCard(req: Request, res: Response): Promise<void>;
 
   /**
+   * Retrieve random full cards.
+   *
+   * @param req request
+   * @param res response
+   */
+  getRandomFullCards(req: Request, res: Response): Promise<void>;
+
+  /**
    * Get a 'side' card containing only the phrase to translate.
    *
    * @param req request

@@ -12,6 +12,20 @@ export class CardController implements ICardController {
     throw new Error("Method not implemented.");
   }
 
+  public async getRandomFullCards(req: Request, res: Response): Promise<void> {
+    const { error, value: limit } = Joi.number().validate(req.query.limit);
+    if (error) {
+      res.status(400).json({
+        message: "Invalid request",
+        errors: error.details,
+      });
+      return;
+    }
+
+    const cards = await cardService.getRandomFullCards(limit);
+    res.status(200).json(cards);
+  }
+
   public async getSideCard(req: Request, res: Response): Promise<void> {
     throw new Error("Method not implemented.");
   }
