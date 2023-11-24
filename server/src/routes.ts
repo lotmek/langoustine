@@ -6,5 +6,6 @@ export const getAPIRoutes = (): IHandlerRoute[] => {
   return [
     { method: HttpMethods.GET, path: "/", handler: exampleController.getHelloWorld },
     { method: HttpMethods.POST, path: "/v1/cards", handler: cardController.createCard },
+    { method: HttpMethods.GET, path: "/v1/cards", handler: cardController.getRandomFullCards },
   ];
 };
