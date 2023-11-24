@@ -4,10 +4,12 @@ import mongoose from "mongoose";
  * Initialize Mongoose.
  */
 export function initMongoose() {
-  const dbUrl = process.env.DB_URL;
-  if (dbUrl) {
+  const dbConnUrl = process.env.DB_CONN_URL;
+  const dbName = process.env.DB_NAME;
+
+  if (dbConnUrl && dbName) {
     mongoose
-      .connect(dbUrl)
+      .connect(`${dbConnUrl}/${dbName}`)
       .then(() => {
         console.log("Connected to database");
       })

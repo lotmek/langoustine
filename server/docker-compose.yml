@@ -5,7 +5,8 @@ services:
     image: langoustine-server
     environment:
       - PORT=8000
-      - DB_URL=mongodb://mongodb:27017/test
+      - DB_CONN_URL=mongodb://localhost:27017
+      - DB_NAME=langoustine
     ports:
       - "8000:8000"
     depends_on:
