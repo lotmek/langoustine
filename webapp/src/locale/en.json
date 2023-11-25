@@ -18,5 +18,8 @@
       "create": "Create the card",
       "requiredField": "Required field"
     }
+  },
+  "reviewCard": {
+    "title": "Let's review some words/sentences"
   }
 }

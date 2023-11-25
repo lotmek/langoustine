@@ -18,5 +18,8 @@
       "create": "Créer la carte",
       "requiredField": "Champ requis"
     }
+  },
+  "reviewCard": {
+    "title": "Révisons quelques mots/phrases"
   }
 }
