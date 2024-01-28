@@ -1,8 +1,8 @@
 import { boundClass } from "autobind-decorator";
 import { ICardRepository } from "./card-repository.interface";
 import { BaseRepository } from "../base-repository";
-import { FullCard } from "../../domain/model/card";
-import { cardModel } from "../../domain/schema/card-schema";
+import { FullCard } from "domain/model/card";
+import { cardModel } from "domain/schema/card-schema";
 
 @boundClass
 class CardRepository extends BaseRepository<FullCard> implements ICardRepository {

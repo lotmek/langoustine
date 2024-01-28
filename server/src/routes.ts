@@ -1,6 +1,6 @@
 import { HttpMethods, IHandlerRoute } from "./domain/model/route";
-import { cardController } from "./controller/card/card-controller";
-import { exampleController } from "./controller/example/example-controller";
+import { cardController } from "controller/card/card-controller";
+import { exampleController } from "controller/example/example-controller";
 
 export const getAPIRoutes = (): IHandlerRoute[] => {
   return [

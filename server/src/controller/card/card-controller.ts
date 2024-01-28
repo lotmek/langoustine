@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import { boundClass } from "autobind-decorator";
 import Joi from "joi";
 import { ICardController } from "./card-controller.interface";
-import { FullCard } from "../../domain/model/card";
-import { Language } from "../../domain/enum/language";
-import { cardService } from "../../service/card/card-service";
+import { FullCard } from "domain/model/card";
+import { Language } from "domain/enum/language";
+import { cardService } from "service/card/card-service";
 
 @boundClass
 export class CardController implements ICardController {

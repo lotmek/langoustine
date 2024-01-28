@@ -1,8 +1,8 @@
 import { boundClass } from "autobind-decorator";
 import { ICardService } from "./card-service.interface";
-import { FullCard } from "../../domain/model/card";
-import { cardRepository } from "../../repository/card/card-repository";
-import { DEFAULT_CARDS_LIMIT } from "../../domain/constant/card";
+import { FullCard } from "domain/model/card";
+import { cardRepository } from "repository/card/card-repository";
+import { DEFAULT_CARDS_LIMIT } from "domain/constant/card";
 
 @boundClass
 class CardService implements ICardService {

@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import _ from "lodash";
-import { Audited } from "../domain/model/audits";
+import { Audited } from "domain/model/audits";
 import { Document } from "mongoose";
 
 export abstract class BaseRepository<T extends {}> {

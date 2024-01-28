@@ -1,4 +1,4 @@
-import { FullCard } from "../../domain/model/card";
+import { FullCard } from "domain/model/card";
 
 export interface ICardService {
   /**

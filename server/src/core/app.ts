@@ -1,6 +1,6 @@
 import express, { Express, json } from "express";
 import cors from "cors";
-import { IHandlerRoute } from "../domain/model/route";
+import { IHandlerRoute } from "domain/model/route";
 import { initMongoose } from "./mongoose";
 
 /**

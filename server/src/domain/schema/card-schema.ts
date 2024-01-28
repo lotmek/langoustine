@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-import { FullCard } from "../model/card";
-import { Language } from "../enum/language";
+import { FullCard } from "domain/model/card";
+import { Language } from "domain/enum/language";
 import { auditsSchema } from "./common-schema";
-import { Audited } from "../model/audits";
+import { Audited } from "domain/model/audits";
 
 const cardSchema = new mongoose.Schema<Audited<FullCard>>({
   id: {
